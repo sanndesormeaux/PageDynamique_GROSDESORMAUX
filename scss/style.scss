@@ -1,0 +1,209 @@
+@import "./variable";
+@import "./mixins"; 
+
+body{
+    margin:0;
+    padding: 0;
+    background-color: #333333;
+}
+
+
+
+
+@font-face{
+    font-family : "Dosis";
+    src: url("../../fonts/Dosis-Bold.ttf") format("ttf");
+}
+
+@font-face{
+    font-family : "Cocogoose";
+    src: url("../fonts/CocogoosePro-trial.ttf") format("ttf");
+}
+
+html {
+    body{   
+        overflow: hidden;
+        overflow-y: scroll;
+        #navbar {
+            width: 100vw;
+            text-align: center;
+            color: white;
+            height: $navheight;
+           background-color: #333333;
+           display: flex;
+           flex-direction: row;
+           justify-content: space-between;
+           font-family : "Dosis";
+           
+           img{
+               position: relative;
+               justify-content: center;
+               margin: auto;
+               height: 50px;
+               padding : auto;
+
+           }
+           button{
+            height: $navheight;
+               width: $navbuttonsize;
+               float: left;
+               line-height: $navheight;
+               background-color: #333333;
+               font-family: $navbarfont;
+               font-size: 18px;
+               color: white;
+               width : 30vh;
+               border: none;
+
+           }
+
+           #menu:hover {
+               background-color: rgb(105, 105, 105) ;
+               font-size: 35px;
+               transition: ease 0.5s;
+           }
+
+           #myspace{
+            height: $navheight;
+               float: left;
+               line-height: $navheight;
+           }
+           #myspace:hover {
+            background-color: rgb(105, 105, 105) ;
+               font-size: 18px;
+               transition: ease 0.5s;
+           }
+           
+        }
+
+        #navlist{
+            width : 0px;
+            height : 100vh;
+            float: left;
+            background-color: white;
+            overflow: hidden;  
+            transition: ease 1.5s;
+            font-family: $navbarfont;
+            text-align: center;
+            z-index: 5;
+            
+            ul{
+                list-style-type : none;
+                li{
+                    padding: 10%;
+                }
+            }
+        }
+
+        #dropdownn{
+            background-color: aliceblue;
+            display: flex;
+            flex-direction: column;
+            float : right;
+            height: 0vh;
+            width: 20vw;
+            opacity: 1;
+            padding: 0%;
+            overflow: hidden;
+            transition: 1s ease;
+            
+
+            .account{
+                display: flex;
+                justify-content: center;
+                align-items: center;;
+                width : 20vw;
+                height : 10vh;
+                border : solid black 1px;
+                margin : 2%;
+            }
+         }
+
+            #main { 
+
+                padding: 5%;
+                color: white;
+                font-family: "Dosis" ;
+                background: linear-gradient(to right bottom, rgb(43, 107, 226), rgb(0, 62, 65));
+                height: 100vh;
+                transition: 0.5s ease;
+                #square{
+                    transition: 2s ease;
+                    opacity : 0;
+                    margin : auto;
+                    display: flex;
+                    border: solid white 5px ;
+                    width : 100%;
+                    height: 40vh;
+                    font-size: 50px;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                }
+
+                button{
+                    width : 20vw;
+                    height : 10vh;
+                    display: flex;
+                    background-color: aliceblue;
+                }
+             
+            }
+
+            #second{
+                padding: 15%;
+                transition: 0.5s ease;
+                color: white;
+                font-family: "Dosis" ;
+                background: linear-gradient(to right bottom, rgb(43, 226, 58), rgb(31, 65, 0));
+                height: 100%;
+                opacity : 0;
+
+                img{
+                    display: flex;
+                    flex-direction: column;
+                    position: relative;
+                    justify-content: center;
+                    margin: auto;
+                    height: 200px;
+                    padding : auto;
+                }
+
+                h1{
+                    display: flex;
+                    font-size: 100px;
+                    justify-content: center;
+                    text-align: center;
+                }
+                h2{
+                    display: flex;
+                    font-size: 40px;
+                    justify-content: center;
+                }
+
+            }
+
+            #third{
+                transition: 0.5s ease;
+                color: white;
+                font-family: "Dosis" ;
+                background: linear-gradient(to right bottom, rgb(226, 192, 43), rgb(65, 55, 0));
+                height: 100vh;
+                width: 100%;
+                opacity : 1;
+                
+                h1{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 10%;
+                    font-size: 50px;
+                    margin: 0;
+                    
+                }
+            }
+            
+
+    }
+
+}

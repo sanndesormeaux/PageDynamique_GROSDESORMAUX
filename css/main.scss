@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right bottom, #2b6be2, #003e41);
+}
+
+@font-face {
+  font-family: "Dosis";
+  src: url("../../fonts/Dosis-Bold.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Cocogoose";
+  src: url("../fonts/CocogoosePro-trial.ttf") format("ttf");
+}
+html body #navbar {
+  text-align: center;
+  color: white;
+  height: 10vh;
+  background-color: #333333;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: "Dosis";
+}
+html body #navbar img {
+  position: relative;
+  margin: auto;
+  height: 50px;
+  padding: 3%;
+}
+html body #navbar button {
+  height: 10vh;
+  width: 20vw;
+  float: left;
+  line-height: 10vh;
+  background-color: #333333;
+  font-family: Dosis;
+  font-size: 18px;
+  color: white;
+  width: 30vh;
+  border: none;
+}
+html body #navbar #menu:hover {
+  background-color: dimgray;
+  font-size: 35px;
+  transition: ease 0.5s;
+}
+html body #navbar #myspace {
+  height: 10vh;
+  float: left;
+  line-height: 10vh;
+}
+html body #navbar #myspace:hover {
+  background-color: dimgray;
+  font-size: 18px;
+  transition: ease 0.5s;
+}
+html body #navlist {
+  width: 0px;
+  height: 100vh;
+  float: left;
+  background-color: white;
+  overflow: hidden;
+  transition: ease 1.5s;
+  font-family: Dosis;
+  text-align: center;
+  z-index: 5;
+}
+html body #navlist ul {
+  list-style-type: none;
+}
+html body #navlist ul li {
+  padding: 10%;
+}
+html body #main {
+  position: relative;
+  padding: 15%;
+  color: white;
+  font-family: "Dosis";
+  background-color: #333333;
+  opacity: 50%;
+  height: 100vh;
+}
+html body #main #square {
+  position: static;
+  border: solid white 5px;
+  width: 40vw;
+  height: 20vh;
+  margin: auto;
+  line-height: 20vh;
+  text-align: center;
+}
+
+/*# sourceMappingURL=main.scss.map */
